@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Pet - Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --primary: #FF9F1C; --secondary: #2EC4B6; --dark: #333; --light: #fff; --bg: #FDFFFC; }
+  body { font-family: 'Nunito', sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--dark); }
+  header { background: var(--primary); color: var(--light); padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+  nav { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  nav a { color: var(--light); text-decoration: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; transition: background 0.3s; }
+  nav a:hover { background: rgba(255,255,255,0.3); }
+  nav a.active { background: var(--light); color: var(--primary); }
+  main { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+  article { background: var(--light); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
+  h2 { color: var(--secondary); border-bottom: 2px solid var(--secondary); display: inline-block; margin-bottom: 20px; }
+  footer { background: var(--dark); color: var(--light); padding: 20px; text-align: center; margin-top: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+  .grid img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .grid img:hover { transform: scale(1.05); cursor: pointer; }
+  /* BANDEIRAS */
+  .flags { position: absolute; top: 20px; right: 20px; z-index: 10; }
+  .flags a { text-decoration: none; font-size: 24px; margin-left: 10px; opacity: 0.7; transition: 0.2s; display: inline-block; }
+  .flags a:hover, .flags a.active { transform: scale(1.2); opacity: 1; }
+  @media (max-width: 600px) { .flags { position: static; text-align: center; margin-bottom: 10px; } }
+</style>
+</head>
+<body>
+
+<div class="flags">
+  <a href="galeria.html" title="Português">🇧🇷</a>
+  <a href="#" class="active" title="English">🇺🇸</a>
+</div>
+
+<header>
+  <h1>🐾 Happy Pet</h1>
+  <nav>
+    <a href="index-eng.html">Home</a>
+    <a href="sobre-eng.html">About</a>
+    <a href="servicos-eng.html">Services</a>
+    <a href="galeria-eng.html" class="active">Gallery</a>
+    <a href="contato-eng.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h2>Our Guests</h2>
+    <p>Check out the happiness of those who pass by here:</p>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=60" alt="Bulldog">
+      <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=60" alt="Cat looking">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=60" alt="Golden Retriever">
+      <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=400&q=60" alt="Persian Cat">
+      <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=400&q=60" alt="Puppy">
+    </div>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2025 Happy Pet - Love for animals</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pet Feliz - Sobre Nós</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    /* CSS DAS BANDEIRAS */
+  .flags {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  .flags a {
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 10px;
+    opacity: 0.7;
+    transition: transform 0.2s, opacity 0.2s;
+    display: inline-block;
+  }
+  .flags a:hover, .flags a.active {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  /* Ajuste para celular */
+  @media (max-width: 600px) {
+    .flags { position: static; text-align: center; margin-bottom: 10px; }
+  }
+  /* (Mesmo CSS Global para manter a identidade visual) */
+  :root { --primary: #FF9F1C; --secondary: #2EC4B6; --dark: #333; --light: #fff; --bg: #FDFFFC; }
+  body { font-family: 'Nunito', sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--dark); line-height: 1.6; }
+  
+  header { background: var(--primary); color: var(--light); padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+  
+  nav { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  nav a { color: var(--light); text-decoration: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; transition: background 0.3s; }
+  nav a:hover { background: rgba(255,255,255,0.3); }
+  nav a.active { background: var(--light); color: var(--primary); }
+  
+  main { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+  
+  article { background: var(--light); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
+  
+  h2 { color: var(--secondary); border-bottom: 2px solid var(--secondary); display: inline-block; margin-bottom: 20px; }
+  h3 { color: var(--primary); margin-top: 30px; }
+  
+  footer { background: var(--dark); color: var(--light); padding: 20px; text-align: center; margin-top: 40px; }
+
+  /* Estilos específicos desta página */
+  .sobre-content { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; }
+  .texto { flex: 1; min-width: 300px; }
+  .imagem { flex: 1; min-width: 300px; }
+  .imagem img { width: 100%; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+  
+  ul { list-style: none; padding: 0; }
+  ul li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+  ul li::before { content: "🐾"; position: absolute; left: 0; color: var(--primary); }
+</style>
+</head>
+<body>
+    <div class="flags">
+  <a href="#" class="active" title="Português">🇧🇷</a>
+  <a href="sobre-eng.html" title="English">🇺🇸</a>
+</div>
+
+<header>
+  <h1>🐾 Pet Feliz</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html" class="active">Sobre</a> 
+    <a href="servicos.html">Serviços</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h2>Nossa História</h2>
+    
+    <div class="sobre-content">
+      <div class="texto">
+        <p>A <strong>Pet Feliz</strong> nasceu em 2010 de um sonho simples: criar um lugar onde os animais fossem tratados não apenas como pets, mas como membros da família. O que começou como um pequeno serviço de banho e tosa na garagem de casa, hoje se tornou uma referência em cuidado animal na cidade.</p>
+        <p>Nossa equipe é formada por apaixonados por bichos. Aqui, cada "au-au" e cada "miau" é ouvido com atenção. Acreditamos que o bem-estar animal envolve saúde física, mental e muito carinho.</p>
+      </div>
+      <div class="imagem">
+        <img src="https://img.freepik.com/fotos-gratis/close-no-veterinario-cuidando-do-cachorro_23-2149100223.jpg" alt="Veterinária cuidando de cachorro">
+      </div>
+    </div>
+
+    <h3>Nossos Valores</h3>
+    <p>Trabalhamos guiados por três pilares fundamentais:</p>
+    <ul>
+      <li><strong>Amor Incondicional:</strong> Tratamos cada animal com paciência e respeito.</li>
+      <li><strong>Transparência:</strong> Você pode acompanhar todo o processo de banho e tosa através de nossos vidros.</li>
+      <li><strong>Qualidade:</strong> Utilizamos apenas produtos de primeira linha e hipoalergênicos.</li>
+    </ul>
+
+    <h3>Venha nos visitar!</h3>
+    <p>Adoramos receber visitas (especialmente as de quatro patas!). Venha tomar um café conosco e conhecer nossa estrutura.</p>
+
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2025 Pet Feliz - Amor por animais</p>
+</footer>
+</body>
+</html>
